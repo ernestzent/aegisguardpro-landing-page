@@ -3,11 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Protege tu infraestructura digital con monitoreo de amenazas en tiempo real y respuesta automatizada.">
-  <title>AegisGuardPro | Ciberseguridad y Monitoreo 24/7</title>
+  
+  <title>AegisGuardPro | Ciberseguridad y Monitoreo SOC Automatizado 24/7</title>
+
+  <meta name="description" content="Protege tu empresa con AegisGuardPro: plataforma SOC 24/7, monitoreo de amenazas en tiempo real y análisis de vulnerabilidades. ¡Prueba gratis 14 días!">
+
+  <meta name="keywords" content="ciberseguridad empresarial, monitoreo SOC 24/7, detección de amenazas, análisis de vulnerabilidades, seguridad en la nube, auditoría TI, SIEM">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="AegisGuardPro Security">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AegisGuardPro | Ciberseguridad y Monitoreo SOC Automatizado 24/7">
+  <meta property="og:description" content="Detecta y neutraliza amenazas en tiempo real. Automatiza tu monitoreo de seguridad y cumplimiento normativo en 10 minutos.">
+  <meta property="og:image:alt" content="Panel de control de ciberseguridad AegisGuardPro mostrando monitoreo de red en tiempo real">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,31 +29,46 @@
   <header class="site-header">
     <div class="container header-container">
       <div class="logo">Aegis<span>GuardPro</span></div>
-      <a href="#registro" class="header-cta">Solicitar Demo</a>
+      <nav aria-label="Navegación de conversión">
+        <ul class="nav-list">
+          <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+          <li><a href="#registro" class="header-cta">Solicitar Demo</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="container hero-grid">
         
         <div class="hero-content">
           <span class="badge">SOC Automatizado de Nueva Generación</span>
-          <h1>Detecta y neutraliza amenazas antes de que afecten tu operación</h1>
+          <h1 id="hero-heading">Plataforma de Ciberseguridad y Monitoreo SOC en Tiempo Real</h1>
           <p class="subtitle">
-            Monitoreo continuo 24/7, análisis de vulnerabilidades en tiempo real y cumplimiento normativo automatizado en una sola plataforma intuitiva.
+            Detecta y neutraliza amenazas antes de que afecten tu operación con monitoreo continuo 24/7, análisis de vulnerabilidades y cumplimiento normativo automatizado.
           </p>
           
           <ul class="benefits-list">
             <li><strong>Despliegue en 10 minutos:</strong> Integración inmediata con tu infraestructura en la nube.</li>
-            <li><strong>Cero falsos positivos:</strong> Motor de correlación de eventos de alta precisión.</li>
-            <li><strong>Reportes de auditoría listos:</strong> Cumplimiento continuo con estándares internacionales.</li>
+            <li><strong>Cero falsos positivos:</strong> Motor de correlación SIEM de alta precisión.</li>
+            <li><strong>Reportes de auditoría TI:</strong> Cumplimiento continuo con estándares como ISO 27001 y NIST.</li>
           </ul>
+
+          <figure class="dashboard-preview">
+            <img 
+              src="img/dashboard-soc.jpg" 
+              alt="Interfaz del panel SOC de AegisGuardPro mostrando gráficas de tráfico de red y alertas de amenazas bloqueadas" 
+              width="600" 
+              height="320"
+              loading="lazy">
+            <figcaption>Vista en tiempo real del módulo de correlación de eventos y respuesta a incidentes.</figcaption>
+          </figure>
         </div>
 
-        <div class="conversion-card" id="registro">
-          <h2>Inicia tu prueba gratuita de 14 días</h2>
-          <p>Obtén un diagnóstico de seguridad instantáneo. Sin tarjeta de crédito.</p>
+        <aside class="conversion-card" id="registro" aria-labelledby="form-heading">
+          <h2 id="form-heading">Inicia tu prueba gratuita de 14 días</h2>
+          <p>Obtén un diagnóstico de vulnerabilidades instantáneo. Sin tarjeta de crédito.</p>
           
           <form class="lead-form" action="#" method="POST">
             <div class="form-group">
@@ -64,40 +93,67 @@
             </div>
 
             <button type="submit" class="cta-button">Activar Protección Gratuita</button>
-            <span class="privacy-note">Tus datos están protegidos bajo cifrado AES-256.</span>
+            <span class="privacy-note">
+              Tus datos están protegidos bajo cifrado AES-256. Consulta nuestro 
+              <a href="/privacidad" rel="nofollow" class="inline-link">Aviso de Privacidad</a>.
+            </span>
           </form>
-        </div>
+        </aside>
 
       </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="beneficios" aria-labelledby="features-heading">
       <div class="container">
-        <h2 class="section-title">¿Por qué migrar tu seguridad a AegisGuardPro?</h2>
+        <h2 id="features-heading" class="section-title">¿Por qué migrar tu ciberseguridad a AegisGuardPro?</h2>
+        
         <div class="features-grid">
           <article class="feature-card">
+            <img 
+              src="img/visibilidad-red.jpg" 
+              alt="Analista de ciberseguridad supervisando múltiples métricas de tráfico y cortafuegos" 
+              class="feature-img"
+              width="320"
+              height="180"
+              loading="lazy">
             <div class="feature-icon">01</div>
-            <h3>Visibilidad Total</h3>
-            <p>Centraliza todos tus registros, alertas y métricas de red en un panel unificado de alto contraste.</p>
+            <h3>Visibilidad Total de Red</h3>
+            <p>Centraliza todos tus registros, alertas SIEM y métricas de servidores en un panel unificado de alto contraste.</p>
           </article>
+
           <article class="feature-card">
+            <img 
+              src="img/respuesta-incidentes.jpg" 
+              alt="Código binario y matriz de datos representando detección automatizada de malware" 
+              class="feature-img"
+              width="320"
+              height="180"
+              loading="lazy">
             <div class="feature-icon">02</div>
-            <h3>Respuesta Instantánea</h3>
+            <h3>Respuesta Automatizada a Incidentes</h3>
             <p>Aísla endpoints comprometidos y bloquea direcciones IP maliciosas automáticamente en milisegundos.</p>
           </article>
+
           <article class="feature-card">
+            <img 
+              src="img/auditoria-ti.jpg" 
+              alt="Auditor de TI revisando reportes de cumplimiento normativo e indicadores de riesgo" 
+              class="feature-img"
+              width="320"
+              height="180"
+              loading="lazy">
             <div class="feature-icon">03</div>
-            <h3>Auditoría Simplificada</h3>
-            <p>Genera evidencias técnicas y reportes ejecutivos de mitigación de riesgos con un solo clic.</p>
+            <h3>Auditoría y Cumplimiento Simplificado</h3>
+            <p>Genera evidencias técnicas y reportes ejecutivos de mitigación de riesgos tecnológicos con un solo clic.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="bottom-cta">
+    <section class="bottom-cta" aria-labelledby="cta-heading">
       <div class="container bottom-cta-box">
-        <h2>¿Listo para blindar la infraestructura de tu equipo?</h2>
-        <p>Únete a más de 500 equipos de tecnología que ya automatizaron su monitoreo de seguridad.</p>
+        <h2 id="cta-heading">¿Listo para blindar la infraestructura de tu equipo?</h2>
+        <p>Únete a más de 500 equipos de tecnología que ya automatizaron su monitoreo de seguridad bajo estándares de nivel bancario.</p>
         <a href="#registro" class="cta-button secondary-cta">Solicitar mi acceso ahora</a>
       </div>
     </section>
@@ -106,6 +162,17 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <p>&copy; 2026 AegisGuardPro Security. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li>
+          <a href="https://www.isc2.org/" target="_blank" rel="noopener noreferrer">Estándares ISC2</a>
+        </li>
+        <li>
+          <a href="https://owasp.org/" target="_blank" rel="noopener noreferrer">Guías OWASP</a>
+        </li>
+        <li>
+          <a href="/terminos" rel="nofollow">Términos de Servicio</a>
+        </li>
+      </ul>
     </div>
   </footer>
 
